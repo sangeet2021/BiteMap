@@ -1,0 +1,9 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.section {
+  display: flex;
+  height: calc(100vh - 4rem);
+}

@@ -1,65 +1,71 @@
 nav {
-    width: 100%;
-    display: flex;
-    flex: 1;
-    justify-content: space-around;
-    align-items: center;
-    height: 4rem;
-    background-color: #d32f2f;
-    color: white;
-  }
-  
-  nav > h1,
-  nav > .search-bar,
-  nav > ul {
-    flex: 1;
-    text-align: center;
-  }
-  
-  .search-bar {
-    height: 2.5rem;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .search-bar input {
-    width: 12rem;
-    padding: 4px;
-    border-radius: 5px 0 0 5px;
-    outline: none;
-    border: none;
-  }
-  
-  .search-bar button {
-    border: none;
-    border-radius: 0 5px 5px 0;
-    padding: 2px;
-    width: 2rem;
-    cursor: pointer;
-    background-color: white;
-    color: gray;
-    transition: all linear 0.1s;
-  }
-  
-  .search-bar button:hover {
-    transition: all linear 0.1s;
-    color: red;
-  }
-  
-  nav ul {
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    gap: 2rem;
-  }
-  
-  nav ul li button {
-    border: none;
-    height: 2rem;
-    cursor: pointer;
-    width: 4rem;
-    border-radius: 5px;
-    background-color: white;
-  }
-  
+  width: 100%;
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+  align-items: center;
+  height: 4rem;
+  background-color: #d32f2f;
+  color: white;
+}
+
+nav > h1,
+nav > .search-bar,
+nav > ul {
+  flex: 1;
+  text-align: center;
+}
+
+.search-bar {
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.search-bar input {
+  width: 12rem;
+  padding: 4px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  border: none;
+}
+
+.search-bar button {
+  border: none;
+  border-radius: 0 5px 5px 0;
+  padding: 2px;
+  width: 2rem;
+  cursor: pointer;
+  background-color: white;
+  color: gray;
+  transition: all linear 0.1s;
+}
+
+.search-bar button:hover {
+  transition: all linear 0.1s;
+  color: red;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+nav ul li button {
+  border: none;
+  height: 2rem;
+  cursor: pointer;
+  width: 4rem;
+  border-radius: 5px;
+  background-color: white;
+  transition: all linear 0.1s;
+}
+
+nav ul li button:hover {
+  background-color: #FF9800;
+  color: white;
+  transition: all linear 0.1s;
+}

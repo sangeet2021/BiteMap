@@ -9,11 +9,23 @@ nav {
   color: white;
 }
 
-nav > h1,
+nav > .logo,
 nav > .search-bar,
 nav > ul {
   flex: 1;
   text-align: center;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: green; */
+}
+
+.logo img {
+  height: 80px;
+  margin: 0px;
 }
 
 .search-bar {
@@ -65,7 +77,7 @@ nav ul li button {
 }
 
 nav ul li button:hover {
-  background-color: #FF9800;
+  background-color: #ff9800;
   color: white;
   transition: all linear 0.1s;
 }

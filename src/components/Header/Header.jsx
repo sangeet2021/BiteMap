@@ -6,7 +6,10 @@ import { faSearch } from "@fortawesome/free-solid-svg-icons";
 const Header = () => {
   return (
     <nav>
-      <h1>BiteMap</h1>
+      <div className="logo">
+        {/* <img src="/BiteMapC.png" alt="" /> */}
+        <h1>BiteMap</h1>
+      </div>
       <div className="search-bar">
         <input type="text" placeholder="feeling hungry?" />
         <button>

@@ -30,15 +30,15 @@ const List = () => {
             onChange={(e) => setRating(e.target.value)}
           >
             <option value={0}>All</option>
-            <option value={3}>Above 3.0</option>
-            <option value={4}>Above 4.0</option>
             <option value={4.5}>Above 4.5</option>
+            <option value={4}>Above 4.0</option>
+            <option value={3}>Above 3.0</option>
           </select>
         </div>
       </div>
       <div className="restaurants">
         {restaurants.map((place, i) => (
-          <PlaceDetails key={i} place ={place} num = {i}/>
+          <PlaceDetails key={i} place={place} num={i} />
         ))}
       </div>
     </div>

@@ -2,21 +2,21 @@ import React, { useState } from "react";
 import "./List.css";
 import PlaceDetails from "../PlaceDetails/PlaceDetails";
 
-const List = () => {
+const List = ({restaurants}) => {
   const [rating, setRating] = useState("");
 
-  const restaurants = [
-    "The Gourmet Spot",
-    "Ocean Breeze Grill",
-    "Saffron Delight",
-    "Urban Table",
-    "Café de Luna",
-    "Tuscany Trattoria",
-    "Bistro Bella",
-    "The Green Fork",
-    "Spice Haven",
-    "The Palate",
-  ];
+  // const restaurants = [
+  //   "The Gourmet Spot",
+  //   "Ocean Breeze Grill",
+  //   "Saffron Delight",
+  //   "Urban Table",
+  //   "Café de Luna",
+  //   "Tuscany Trattoria",
+  //   "Bistro Bella",
+  //   "The Green Fork",
+  //   "Spice Haven",
+  //   "The Palate",
+  // ];
   return (
     <div className="list">
       <div className="restaurant-header">
@@ -38,7 +38,7 @@ const List = () => {
       </div>
       <div className="restaurants">
         {restaurants.map((place, i) => (
-          <PlaceDetails key={i} place={place} num={i} />
+          <PlaceDetails key={i} place={place.name} num={i} />
         ))}
       </div>
     </div>

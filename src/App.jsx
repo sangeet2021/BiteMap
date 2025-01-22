@@ -7,14 +7,25 @@ import { useEffect, useState } from "react";
 
 function App() {
   const [restaurants, setRestaurants] = useState([]);
-  const [coordinates, setCoordinates] = useState({});
+  const [coordinates, setCoordinates] = useState({ lat: 0, lng: 0 });
   const [bounds, setBounds] = useState(null);
+
   useEffect(() => {
-    getPlacesData().then((data) => {
-      setRestaurants(data);
-      
-    });
+    navigator.geolocation.getCurrentPosition(
+      ({ coords: { latitude, longitude } }) => {
+        setCoordinates({ lat: latitude, lng: longitude });
+      }
+    );
   }, []);
+
+  useEffect(() => {
+    if (bounds?.northeast && bounds?.southwest) {
+      getPlacesData(bounds.northeast, bounds.southwest).then((data) => {
+        setRestaurants(data || []);
+      });
+    }
+  }, [coordinates, bounds]);
+
   return (
     <>
       <Header />

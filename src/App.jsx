@@ -12,6 +12,7 @@ function App() {
   useEffect(() => {
     getPlacesData().then((data) => {
       setRestaurants(data);
+      
     });
   }, []);
   return (

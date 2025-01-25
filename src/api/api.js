@@ -14,13 +14,13 @@ export const getPlacesData = async(ne, sw) => {
             tr_latitude: ne.lat,
             bl_longitude: sw.lng,
             tr_longitude: ne.lng,
-          //   restaurant_tagcategory_standalone: '10591',
-          //   restaurant_tagcategory: '10591',
-          //   limit: '30',
-          //   currency: 'USD',
-          //   open_now: 'false',
-          //   lunit: 'km',
-          //   lang: 'en_US'
+            restaurant_tagcategory_standalone: '10591',
+            restaurant_tagcategory: '10591',
+            limit: '30',
+            currency: 'USD',
+            open_now: 'false',
+            lunit: 'km',
+            lang: 'en_US'
           },
           headers: {
             'x-rapidapi-key': '31b78eb525msh0baa6084eaf8520p152b34jsn94485c955a8a',

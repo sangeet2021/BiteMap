@@ -38,7 +38,7 @@ const List = ({restaurants}) => {
       </div>
       <div className="restaurants">
         {restaurants.map((place, i) => (
-          <PlaceDetails key={i} place={place.name} num={i} />
+          <PlaceDetails key={i} place={place} num={i} />
         ))}
       </div>
     </div>

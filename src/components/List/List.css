@@ -3,7 +3,9 @@
   overflow-y: auto;
   scroll-behavior: smooth;
   scrollbar-width: thin;
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .restaurant-header {

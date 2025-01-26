@@ -1,14 +1,18 @@
 import React from "react";
+import "./PlaceDetails.css";
 
 const PlaceDetails = ({ place, num }) => {
-  console.log(place);
+  const imgSrc =
+    "https://www.foodiesfeed.com/wp-content/uploads/2023/06/burger-with-melted-cheese.jpg";
   return (
-    <h3>
+    <div className="place-details">
       <div className="img">
-        {/* <img src={place.photo} alt={place.name} /> */}
+        <img src={imgSrc} alt="food" />
       </div>
-      {num + 1}. {place.name}
-    </h3>
+      <h3>
+        {num + 1}. {place}
+      </h3>
+    </div>
   );
 };
 
